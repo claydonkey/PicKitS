@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8A4D65BB-54EC-4F2E-B7B6-6DC5FBEE2339}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>PICkitS</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="System" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="PICkitS\Firmware.cs" />
+    <Compile Include="PICkitS\Bootloader.cs" />
+    <Compile Include="PICkitS\USBRead.cs" />
+    <Compile Include="PICkitS\Basic.cs" />
+    <Compile Include="PICkitS\USBWrite.cs" />
+    <Compile Include="PICkitS\USART.cs" />
+    <Compile Include="PICkitS\GenericHID.cs" />
+    <Compile Include="PICkitS\MicrowireM.cs" />
+    <Compile Include="PICkitS\BL16.cs" />
+    <Compile Include="PICkitS\Utilities.cs" />
+    <Compile Include="PICkitS\Status.cs" />
+    <Compile Include="PICkitS\I2CS.cs" />
+    <Compile Include="PICkitS\Device.cs" />
+    <Compile Include="PICkitS\USB.cs" />
+    <Compile Include="PICkitS\mTouchCap.cs" />
+    <Compile Include="PICkitS\mTouch2.cs" />
+    <Compile Include="PICkitS\Constants.cs" />
+    <Compile Include="PICkitS\mTouchLV.cs" />
+    <Compile Include="PICkitS\I2CM.cs" />
+    <Compile Include="PICkitS\SPIM.cs" />
+    <Compile Include="PICkitS\Mode.cs" />
+    <Compile Include="PICkitS\LIN.cs" />
+  </ItemGroup>
+</Project>
